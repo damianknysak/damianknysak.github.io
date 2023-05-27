@@ -304,6 +304,6 @@ function mouseClicked() {
 
 function changeCursor(){
   if (mouseX < 50 && mouseY < 50) {
-    cursor('http://www.rw-designer.com/cursor-extern.php?id=144156');
+    cursor('assets/crosshair.cur');
   }
 }
