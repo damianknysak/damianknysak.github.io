@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sketch</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="modalWynikowy inactive">
+    <div class="wynikHeader">Tablica wyników</div>
+    <div class="divWynik"></div>
+    <div class="divWszystkie"></div>
+    <div class="divCelnosc"></div>
+    <button class="startBtn">Zagraj ponownie</button>
+  </div>
+
+  <div class="modalRanking inactive">
+    <ol class="rankingList"></ol>
+  </div>
+  <div class="modalBonus inactive">
+    <div unselectable="on" class="waviy bonusAward inactive">
+      <span unselectable="on" style="--i:1">+2</span>
+      <span unselectable="on" style="--i:2">Points</span>
+     </div>
+     <div class="waviy bonusTime inactive">
+      <span style="--i:1t">+4</span>
+      <span style="--i:2">Seconds</span>
+     </div>
+     <div class="waviy bonusBomb inactive">
+      <span style="--i:1">Bomba</span>
+      <span style="--i:2">Eksplodowała</span>
+     </div>
+  </div>
+  <div class="nav-inGame inactive">
+    <button class="quitBtn">
+      Wyjdź
+    </button>
+    <label>Wynik: <label class="Wynik">0</label></label>
+    <label>Czas: <label class="Czas">0.00</label>s</label>
+    <label>Liczba ptaków: <label class="LiczbaPtakow">0</label></label>
+    <label>Celność: <label class="Celnosc">0.00</label>%</label>
+  </div>
+  <nav>
+    <button class="startBtn">Rozpocznij grę</button>
+    <button class="recordsBtn">Ranking rekordów</button>
+  </nav>
+  <script src="gui.js"></script>
+  <script src="sketch.js"></script>
+  <script src="bird.js"></script>
+  <script src="budzik.js"></script>
+  <script src="award.js"></script>
+  <script src="bomb.js"></script>
+</body>
+
+</html>

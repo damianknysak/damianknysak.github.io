@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+nav, .nav-inGame{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(24, 100, 171, 0.3);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button{
+  background-color: rgba(24, 100, 171, 0.6);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px;
+  height: 60px;
+}
+button:hover{
+  background-color: rgba(18, 81, 139, 0.6);
+  cursor: pointer;
+}
+.activeBtn{
+  background-color: rgba(9, 41, 71, 0.8);
+}
+.startBtn:active{
+  background-color: black;
+}
+
+.inactive{
+  display: none !important;
+}
+
+.nav-inGame label{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 25px;
+}
+.Wynik{
+  color: red !important;
+  font-weight: bold;
+}
+.modalWynikowy, .modalRanking{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 600px;
+  height: 500px;
+  background-color: rgba(24, 100, 171, 0.7);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modalWynikowy div{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.wynikHeader{
+  font-weight: 500;
+}
+
+.modalRanking ol li{
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.modalBonus{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,1));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: rgba(32, 126, 37, .8);
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  user-select: none;
+}
+.bonusBomb span{
+  color: rgba(133, 17, 32, 0.8) !important;
+}
+
+.bonusTime span{
+  color: rgba(17, 25, 133, 0.8) !important;
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
